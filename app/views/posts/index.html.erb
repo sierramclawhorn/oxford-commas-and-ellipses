@@ -3,7 +3,7 @@
   <br><br>
 <!-- end admin -->
 
-<div class='posts'>
+<div class='posts columns'>
 	<% @posts.each do |post| %>
 		<div class='titleTxt'>
 			<%= link_to post.title, post_path(post.id) %>
@@ -14,5 +14,20 @@
 		<div class='bodyTxt'>
 			<%= raw post.body %>
 		</div>
+		<br><br>
 	<% end %>
+</div>
+
+
+<div class='about columns'>
+	<%= image_tag 'aboutimg.jpg', class: 'aboutImg' %>
+	<p>They call me Sierra McFancyPants (they don't).
+	These are the thoughts of a person who enjoys the following: 
+	imagining animals with potato bodies; building IKEA furniture; submerging hands in bowls of flour; finding grammar mistakes on Chinese menus; Benjamin Franklin</p>
+
+	<div class='socialMedia'>
+		<a href="http://www.instagram.com/flatulancebass"><%= image_tag 'instagram.png', class: 'icon' %></a>
+		<!-- add link to website  -->
+		<%= image_tag 'website.png', class: 'icon' %>
+	</div>
 </div>
