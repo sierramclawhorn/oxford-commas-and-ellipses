@@ -19,7 +19,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if @post.save 
-      redirect_to post_path
+      redirect_to post_path(@post.id)
     else
       render 'new'
     end
@@ -28,13 +28,13 @@ class PostsController < ApplicationController
   def update
   	find_post
     if @post.update(post_params)
-      redirect_to post_path
+      redirect_to post_path(@post.id)
     else
       render 'edit'
     end
   end
 
-  def destory
+  def destroy
   	find_post
     @post.destroy
   end

@@ -1,0 +1,12 @@
+<div class='post'>
+	<%= @post.title %>
+	<%= @post.date %>
+	<%= raw @post.body %>
+</div>
+
+
+<!-- if admin -->
+<br><br>
+<%= link_to 'Edit', edit_post_path %> 
+  |
+<%= link_to 'Delete', post_path, method: :delete, data: { confirm: "DON'T DO IT!! STAHP! WHATAREYOUDOING!?" } %>

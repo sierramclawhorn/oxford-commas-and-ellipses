@@ -1,0 +1,12 @@
+<!-- if admin -->
+<%= link_to 'New Post', new_post_path %>
+  <br><br>
+<!-- end admin -->
+
+<div class='posts'>
+	<% @posts.each do |post| %>
+		<%= link_to post.title, post_path(post.id) %>
+		<%= post.date %>
+		<%= raw post.body %>
+	<% end %>
+</div>
