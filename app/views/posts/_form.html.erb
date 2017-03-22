@@ -24,14 +24,10 @@
         <%= f.text_field :title, class: 'postTitle' %>
       </p>
 
-      <p> --------------------------------- </p> 
-
       <p>
         <%= f.label :body %><br>
         <%= f.text_area :body, class: 'tinymce postBody', :rows => 40, :cols => 120 %>
       </p>
-
-      <p> --------------------------------- </p> 
 
         <%= f.submit "Add/Update Post" %>
         <%= tinymce plugins: "image imagetools" %>

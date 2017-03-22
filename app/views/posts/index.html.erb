@@ -5,6 +5,8 @@
 
 <div class='posts'>
 	<% @posts.each do |post| %>
-		<%= post %>
+		<%= link_to post.title, post_path(post.id) %>
+		<%= post.date %>
+		<%= raw post.body %>
 	<% end %>
 </div>
