@@ -5,8 +5,14 @@
 
 <div class='posts'>
 	<% @posts.each do |post| %>
-		<%= link_to post.title, post_path(post.id) %>
-		<%= post.date %>
-		<%= raw post.body %>
+		<div class='titleTxt'>
+			<%= link_to post.title, post_path(post.id) %>
+		</div>
+		<div class='dateTxt'>
+			<%= post.date %>
+		</div>
+		<div class='bodyTxt'>
+			<%= raw post.body %>
+		</div>
 	<% end %>
 </div>

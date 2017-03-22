@@ -1,3 +1,28 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.titleTxt {
+	font-family: "ostrich_sansblack",Helvetica Neue,Helvetica,sans-serif;
+	font-size: 1.5rem;
+	line-height: 1.4;
+	text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.titleTxt a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.dateTxt {
+	font-family: "Montserrat",Helvetica Neue,Helvetica,sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.625rem;
+  color: #333;
+  line-height: 1;
+}
+
+.bodyTxt {
+	font-family: "PT Serif",serif;
+	font-size: 13px;
+	line-height: 1.8em;
+	letter-spacing: 0.5px;
+}

@@ -1,7 +1,13 @@
 <div class='post'>
-	<%= @post.title %>
-	<%= @post.date %>
-	<%= raw @post.body %>
+	<div class='titleTxt'>
+		<%= @post.title %>
+	</div>
+	<div class='dateTxt'>
+		<%= @post.date %>
+	</div>
+	<div class='bodyTxt'>
+		<%= raw @post.body %>
+	</div>
 </div>
 
 
