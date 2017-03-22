@@ -75,10 +75,42 @@ img {
 }
 
 .icon {
-	width: 20%;
+	width: 25%;
+	max-width: 60px;
 	padding-left: 3%;
 	padding-right: 3%;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;	
+}
+
+
+
+
+
+
+
+@media (max-width: 550px) {
+	.aboutImg { display: none; }
+}
+
+@media (max-width: 600px) {
+  .about p { display: none; }
+}
+
+@media (max-width: 800px) {
+	.icon { width: 50px; }
+}
+
+@media only screen and (min-width: 320px) {
+		display: block;
+    width: 100%;
+    height: 204px;
+    position: absolute;
+    left: 0px;
+    top: 125px;
+    background-image: url(images/rotate.png);
+    background-size: 250px 204px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
