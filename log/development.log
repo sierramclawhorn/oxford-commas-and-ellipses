@@ -2236,3 +2236,27 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/posts" for ::1 at 2017-03-23 21:01:57 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (33.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (59.8ms)
+Completed 200 OK in 179ms (Views: 136.7ms | ActiveRecord: 33.9ms)
+
+
+Started GET "/posts" for ::1 at 2017-03-23 21:02:08 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 119ms (Views: 113.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts" for ::1 at 2017-03-23 21:02:28 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 78ms (Views: 74.3ms | ActiveRecord: 1.9ms)
+
+
