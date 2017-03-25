@@ -1,7 +1,7 @@
-<!-- if admin -->
-<%= link_to 'New Post', new_post_path %>
+<% if current_user.username == 'sierramclawhorn' %>
+	<%= link_to 'New Post', new_post_path %>
   <br><br>
-<!-- end admin -->
+<% end %>
 
 <div class='posts columns'>
 	<% @posts.each do |post| %>
