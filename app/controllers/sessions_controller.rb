@@ -11,7 +11,6 @@ class SessionsController < ApplicationController
     user = User.find_by_username(params[:username])
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
-      sessions[:username] = user.username
       respond_to do |format|
         format.js {}
         format.html { redirect_to '/' }
