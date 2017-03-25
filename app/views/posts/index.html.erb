@@ -4,7 +4,7 @@
 <% end %>
 
 <div class='posts columns'>
-	<% @posts.each do |post| %>
+	<% @posts.reverse_each do |post| %>
 		<div class='titleTxt'>
 			<%= link_to post.title, post_path(post.id) %>
 		</div>
