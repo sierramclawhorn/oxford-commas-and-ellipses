@@ -1,3 +1,7 @@
+<div class='banner'>
+  	<a href='/'><%= image_tag 'icon-sierra.png', class: 'bannerImg' %></a>		
+</div>
+
 <div class='post'>
 	<div class='titleTxt'>
 		<%= @post.title %>
@@ -8,11 +12,13 @@
 	<div class='bodyTxt'>
 		<%= raw @post.body %>
 	</div>
-</div>
-
+	
 
 <% if current_user!= nil && current_user.username == 'sierramclawhorn' %>
 	<%= link_to 'Edit', edit_post_path %> 
   	|
 	<%= link_to 'Delete', post_path, method: :delete, data: { confirm: "DON'T DO IT!! STAHP! WHATAREYOUDOING!?" } %>
 <% end %>
+
+</div>
+

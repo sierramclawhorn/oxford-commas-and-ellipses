@@ -1,0 +1,57 @@
+<div class='home-leftcolumn columns'>
+
+	<div class='banner'>
+  		<a href='/'><%= image_tag 'icon-sierra.png', class: 'bannerImg' %></a>		
+  	</div>
+
+  	<% if current_user!= nil && current_user.username == 'sierramclawhorn' %>
+		<%= link_to 'New Post', new_post_path %>
+ 	 <br><br>
+	<% end %>
+
+	<div class='home-post'>
+		<div class='titleTxt'>
+			<%= link_to @posts.last.title, post_path(@posts.last.id) %>
+		</div>
+		<div class='dateTxt'>
+			<%= @posts.last.date %>
+		</div>
+		<div class='bodyTxt'>
+			<%= raw @posts.last.body %>
+		</div>
+	</div>
+
+	<div class='index-link'>
+		<%= link_to 'more posts', posts_path %>
+	</div>
+
+</div>
+
+
+<div class='home-rightcolumn columns'>
+	<div class='aboutDiv'>
+	</div>
+
+	<div class='instaDiv'>
+	</div>
+
+	<div class='connectDiv'>
+		<div class='emailDiv'>
+		</div>
+	
+		<div class='webiteDiv'>
+		</div>
+	</div>
+
+	<div class='mapDiv'>
+	</div>
+
+	<%= image_tag 'aboutimg.jpg', class: 'aboutImg' %>
+	<p>These are the thoughts of a person who enjoys the following: 
+	imagining animals with potato bodies; building IKEA furniture; submerging hands in bowls of flour; finding grammar mistakes on Chinese menus; Benjamin Franklin</p>
+
+	<div class='socialMedia'>
+		<a href="http://www.instagram.com/flatulancebass"><%= image_tag 'instagram.png', class: 'icon' %></a>
+		<a href="http://www.sierramclawhorn.com"><%= image_tag 'website.png', class: 'icon' %></a>
+	</div>
+</div>

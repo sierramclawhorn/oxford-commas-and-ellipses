@@ -1,5 +1,9 @@
 class PostsController < ApplicationController
 
+  def home
+    @posts = Post.all
+  end
+
  	def index
     @posts = Post.all.order("updated_at ASC")
   end

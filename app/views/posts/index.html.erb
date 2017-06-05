@@ -1,9 +1,13 @@
+<div class='banner'>
+  	<a href='/'><%= image_tag 'icon-sierra.png', class: 'bannerImg' %></a>		
+</div>
+
 <% if current_user!= nil && current_user.username == 'sierramclawhorn' %>
 	<%= link_to 'New Post', new_post_path %>
   <br><br>
 <% end %>
 
-<div class='posts columns'>
+<div class='posts'>
 	<% @posts.reverse_each do |post| %>
 		<div class='titleTxt'>
 			<%= link_to post.title, post_path(post.id) %>
@@ -16,15 +20,4 @@
 		</div>
 		<br><br>
 	<% end %>
-</div>
-
-<div class='about columns'>
-	<%= image_tag 'aboutimg.jpg', class: 'aboutImg' %>
-	<p>These are the thoughts of a person who enjoys the following: 
-	imagining animals with potato bodies; building IKEA furniture; submerging hands in bowls of flour; finding grammar mistakes on Chinese menus; Benjamin Franklin</p>
-
-	<div class='socialMedia'>
-		<a href="http://www.instagram.com/flatulancebass"><%= image_tag 'instagram.png', class: 'icon' %></a>
-		<a href="http://www.sierramclawhorn.com"><%= image_tag 'website.png', class: 'icon' %></a>
-	</div>
 </div>
