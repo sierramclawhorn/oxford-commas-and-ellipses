@@ -1,7 +1,5 @@
 <div class='home-leftcolumn columns'>
 
-	<p class='aboutTxt'>These are the thoughts of a person who enjoys the following: imagining animals with potato bodies; building IKEA furniture; submerging hands in bowls of flour; finding grammar mistakes on Chinese menus; Benjamin Franklin</p>
-
   	<% if current_user!= nil && current_user.username == 'sierramclawhorn' %>
 		<%= link_to 'New Post', new_post_path %>
  	 <br><br>
@@ -22,6 +20,8 @@
 	<div class='index-link'>
 		<%= link_to 'more posts', posts_path %>
 	</div>
+
+	<p class='aboutTxt'>These are the thoughts of a person who enjoys the following: imagining animals with potato bodies; building IKEA furniture; submerging hands in bowls of flour; finding grammar mistakes on Chinese menus; Benjamin Franklin</p>
 
 </div>
 
