@@ -1,9 +1,5 @@
 <div class='home-leftcolumn columns'>
 
-	<div class='banner'>
-  		<a href='/'><%= image_tag 'icon-sierra.png', class: 'bannerImg' %></a>		
-  	</div>
-
   	<% if current_user!= nil && current_user.username == 'sierramclawhorn' %>
 		<%= link_to 'New Post', new_post_path %>
  	 <br><br>
@@ -29,29 +25,28 @@
 
 
 <div class='home-rightcolumn columns'>
-	<div class='aboutDiv'>
-	</div>
-
-	<div class='instaDiv'>
-	</div>
 
 	<div class='connectDiv'>
-		<div class='emailDiv'>
+		<div class='aboutDiv'>
+			<a href="/"><%= image_tag 'icon-secondary.png' %></a>
 		</div>
 	
-		<div class='webiteDiv'>
+		<div class='emailDiv'>
+			<a href="http://www.instagram.com/flatulancebass"><%= image_tag 'email.png' %></a>
+		</div>
+
+		<div class='instaDiv'>
+			<a href="http://www.instagram.com/flatulancebass"><%= image_tag 'instagram.png' %></a>
+		</div>
+	
+		<div class='websiteDiv'>
+			<a href="http://www.sierramclawhorn.com"><%= image_tag 'website.png' %></a>
 		</div>
 	</div>
+
+			<p>These are the thoughts of a person who enjoys the following: imagining animals with potato bodies; building IKEA furniture; submerging hands in bowls of flour; finding grammar mistakes on Chinese menus; Benjamin Franklin</p>
 
 	<div class='mapDiv'>
 	</div>
 
-	<%= image_tag 'aboutimg.jpg', class: 'aboutImg' %>
-	<p>These are the thoughts of a person who enjoys the following: 
-	imagining animals with potato bodies; building IKEA furniture; submerging hands in bowls of flour; finding grammar mistakes on Chinese menus; Benjamin Franklin</p>
-
-	<div class='socialMedia'>
-		<a href="http://www.instagram.com/flatulancebass"><%= image_tag 'instagram.png', class: 'icon' %></a>
-		<a href="http://www.sierramclawhorn.com"><%= image_tag 'website.png', class: 'icon' %></a>
-	</div>
 </div>
