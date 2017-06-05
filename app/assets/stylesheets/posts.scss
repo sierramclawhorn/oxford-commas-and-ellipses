@@ -49,9 +49,13 @@ body {
 					opacity: 0.6;
 				}
 		#earth_div {
+			background-color: #444bff;
 			width: 100%;
 			height: 300px;
 		} 
+		.mapDiv:hover {
+			cursor: pointer;
+		}
 
 
 .home-leftcolumn {
