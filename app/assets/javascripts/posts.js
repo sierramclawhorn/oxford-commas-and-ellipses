@@ -2,9 +2,27 @@ var earth;
 
 function initialize() {
 
-  earth = new WE.map('earth_div');
-  earth.setView([46.8011, 8.2266], 1.3);
-  WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(earth);
+  var options = {
+    sky: false,
+    atmosphere: true,
+    dragging: true,
+    tilting: true,
+    zooming: true,
+    center: [46.8011, 8.2266],
+    zoom: 1.3
+  };
+
+  earth = new WE.map('earth_div', options);
+  var natural = WE.tileLayer('http://data.webglearth.com/natural-earth-color/{z}/{x}/{y}.jpg', {
+    tileSize: 256,
+    tms: true
+  });
+  natural.addTo(earth);
+
+  var toner = WE.tileLayer('http://tile.stamen.com/toner/{z}/{x}/{y}.png', {
+    opacity: 0.6
+  });
+  toner.addTo(earth);
 
   // Start a simple rotation animation
   var before = null;

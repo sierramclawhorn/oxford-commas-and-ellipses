@@ -17,6 +17,7 @@ body {
 }
 
 .bannerImg {
+	padding-top: 4%;
 	width: 20%;
 	max-width: 180px;
 }
@@ -64,7 +65,15 @@ body {
 }
 		.home-post {
 			padding: 2%;
+			padding-left: 4%;
 			overflow: scroll;
+		}
+		.aboutTxt {
+			text-align: justify;
+			font-size: 11px;
+			line-height: 1.3;
+			padding-left: 3%;
+			padding-top: 1%;
 		}
 		.index-link {
 			text-align: right;
