@@ -9,7 +9,7 @@ function initialize() {
     tilting: true,
     zooming: true,
     center: [46.8011, 8.2266],
-    zoom: 1.3
+    zoom: 0.5
   };
 
   earth = new WE.map('earth_div', options);

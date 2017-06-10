@@ -1,3 +1,9 @@
+<div class='homeHeader'>
+	Sierra McLawhorn
+</div>
+	
+<hr>
+
 <div class='home-leftcolumn columns'>
 
   	<% if current_user!= nil && current_user.username == 'sierramclawhorn' %>
@@ -21,40 +27,14 @@
 		<%= link_to 'more posts', posts_path %>
 	</div>
 
+</div>
+
+
+<div class='aboutFooter'>
+<hr>
 	<p class='aboutTxt'>These are the thoughts of a person who enjoys the following: imagining animals with potato bodies; building IKEA furniture; submerging hands in bowls of flour; finding grammar mistakes on Chinese menus; Benjamin Franklin</p>
-
+<hr>
 </div>
 
 
-<div class='home-rightcolumn columns'>
 
-	<div class='connectDiv'>
-		<div class='aboutDiv'>
-			<a href="/"><%= image_tag 'icon-secondary.png' %></a>
-		</div>
-	
-		<div class='emailDiv'>
-			<a href="mailto:sierramclawhorn@gmail.com?Subject=Hello%20from%20Blogsite" target="_top"><%= image_tag 'email.png' %></a>
-		</div>
-
-		<div class='instaDiv'>
-			<a href="http://www.instagram.com/flatulancebass"><%= image_tag 'instagram.png' %></a>
-		</div>
-	
-		<div class='websiteDiv'>
-			<a href="http://www.sierramclawhorn.com"><%= image_tag 'website.png' %></a>
-		</div>
-	</div>
-
-	<div class='mapDiv'>
-		<body onload="initialize()">
-  			<div id="earth_div"></div>
-	</div>
-
-	<div class='latestInstaDiv'>
-		<!-- https://api.instagram.com/v1/users/{user-id}/media/recent/?access_token=ACCESS-TOKEN -->
-	</div>
-
-	<p class='footerTxt'>sierras.life</p>
-
-</div>

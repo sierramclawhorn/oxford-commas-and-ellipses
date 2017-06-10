@@ -15,5 +15,33 @@
   <body>
   
     <%= yield %>
+
+    <div class='home-rightcolumn columns'>
+
+      <div class='connectDiv'>
+        <div class='aboutDiv'>
+          <a href="/"><%= image_tag 'icon-secondary.png' %></a>
+        </div>
+      
+        <div class='emailDiv'>
+          <a href="mailto:sierramclawhorn@gmail.com?Subject=Hello%20from%20Blogsite" target="top"><%= image_tag 'email.png' %></a>
+        </div>
+    
+        <div class='instaDiv'>
+          <a href="http://www.instagram.com/flatulancebass"><%= image_tag 'instagram.png' %></a>
+        </div>
+      
+        <div class='websiteDiv'>
+          <a href="http://www.sierramclawhorn.com"><%= image_tag 'website.png' %></a>
+        </div>
+    
+        <div class='mapDiv'>
+          <body onload="initialize()">
+              <div id="earth_div"></div>
+        </div>
+      </div>
+    
+    </div>
+
   </body>
 </html>
