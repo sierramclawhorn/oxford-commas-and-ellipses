@@ -139,10 +139,15 @@ body {
 	font-weight: normal;
 }
 
-.posts,
-.post {
+.posts {
 	width: 90%;
 	margin: auto;
+}
+
+.post {
+	width: 75%;
+	margin: auto;
+	margin-bottom: 1%;
 }
 
 img {
